@@ -1,1 +1,6 @@
-<p>posts works!</p>
+<div class="post-wrapper" *ngFor="let post of postData" [routerLink]="['post/', post.id]">
+  <div class="title">  {{post.title}}</div>
+  <img [src]="'../assets/' + post.imgName + '.jpg'" alt="">
+  <div class="short-content">  {{post.shortContent}}</div>
+
+</div>

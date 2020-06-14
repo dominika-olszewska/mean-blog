@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./admin.component.scss']
 })
 export class AdminComponent implements OnInit {
+  title = '';
+  shortContent = '';
+  longContent = '';
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  handleSave() {
+    console.warn({
+      title: this.title,
+      shortContent: this.shortContent,
+      longContent: this.longContent,
+    });
   }
-
 }

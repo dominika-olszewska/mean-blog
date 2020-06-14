@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+@import './styles/variables';
+@import './styles/reset';
+
+body {
+  background-color: $background;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: $grey;
+  font-weight: bold;
+
+  &:hover {
+    color: $blue;
+    cursor: pointer;
+  }
+}
+
+.button {
+  font-size: 0.9em;
+  color: $grey;
+  text-transform: uppercase;
+  background: $transparent-grey;
+  padding: 1.25em;
+  border: none;
+  border-radius: 0.375em;
+  display: inline-block;
+
+  &:hover {
+    color: $white;
+    background: #ffcb05;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+  }
+}

@@ -6,6 +6,9 @@ import {AppComponent} from './app.component';
 import {PostsComponent} from './posts/posts.component';
 import {PostComponent} from './post/post.component';
 import {AdminComponent} from './admin/admin.component';
+import { HeaderComponent } from './header/header.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
@@ -27,12 +30,16 @@ const routes: Routes = [
     AppComponent,
     PostsComponent,
     PostComponent,
-    AdminComponent
+    AdminComponent,
+    HeaderComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     RouterModule,
     RouterModule.forRoot(routes),
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
